@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kopi Antar Rasa — tempat rasa bertemu</title>
+<meta name="description" content="Kopi Antar Rasa: kopi yang mengantar rasa dari hati ke hati.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Mansalva&display=swap">
+<style>
+:root{--paper:#F7F3EA;--ink:#3A2F22;--cu:#8B6F52;--cu2:#3A2F22;--soft:#EDE6D9;--line:#D9CFBD;--olive:#6B6F4E;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.75 "Anonymous Pro","Courier New",monospace}
+h1,h2,h3{font-family:"Mansalva","Segoe Print","Comic Sans MS",cursive;font-weight:700;line-height:1.1;margin:0}
+a{color:inherit}:focus-visible{outline:3px solid var(--cu);outline-offset:3px}
+.w{max-width:1040px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0;font-weight:600;font-size:15px}
+nav div{display:flex;gap:20px}nav a{text-decoration:none;color:var(--cu2)}
+.hero{text-align:center;padding:12px 0 72px}
+.hero img{width:min(380px,80vw);height:auto;}
+.hero h1{font-size:clamp(34px,6vw,58px);max-width:15em;margin:0 auto 16px;color:var(--cu2)}
+.hero p{max-width:34em;margin:0 auto;color:#5A4A38}
+.btn{display:inline-block;margin-top:26px;background:var(--cu);color:#fff;text-decoration:none;font-weight:600;padding:13px 28px;border-radius:99px}
+.btn:hover{background:var(--cu2)}
+section{padding:64px 0}
+h2{font-size:clamp(30px,4.5vw,44px);color:var(--cu2);margin-bottom:18px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.two p{margin:0 0 14px}
+.band{background:var(--soft)}
+.arti{border-left:4px solid var(--cu);padding-left:20px;font:italic 500 26px/1.35 "Mansalva","Segoe Print","Comic Sans MS",cursive;color:var(--cu2)}
+.vals{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:26px}
+.vals div{border-top:3px solid var(--cu);padding-top:12px}.vals b{font:700 22px "Mansalva","Segoe Print","Comic Sans MS",cursive;display:block}
+.menu{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:22px;margin-top:26px}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px;text-align:center}
+.card svg{width:96px;height:120px}
+.card h3{font-size:25px;color:var(--cu2);margin-top:6px}
+.card .t{font-size:13px;color:#6F5A44;margin:2px 0 8px}
+.card .q{font:italic 500 18px/1.3 "Mansalva","Segoe Print","Comic Sans MS",cursive;margin:8px 0 0;color:var(--ink)}
+.card p{font-size:15px;line-height:1.55;margin:0}
+.quote{background:var(--cu2);color:#EDE6D9;text-align:center;border-radius:24px;padding:56px 24px;min-height:260px;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.quote blockquote{margin:0 0 22px;font:italic 500 clamp(24px,4vw,36px)/1.3 "Mansalva","Segoe Print","Comic Sans MS",cursive;max-width:24em;transition:opacity .4s}
+.quote button{font:600 15px "Anonymous Pro","Courier New",monospace;background:transparent;color:#EDE6D9;border:1.5px solid #EDE6D9;border-radius:99px;padding:10px 22px;cursor:pointer}
+.quote button:hover{background:#EDE6D9;color:var(--cu2)}
+.card{background:#3A2F22;border-color:#3A2F22;padding:0 0 18px;overflow:hidden}
+.card img{width:100%;height:290px;object-fit:contain;display:block;padding-top:14px}
+.card h3{color:#EDE6D9;padding:0 14px}.card .t{color:#CBBBA3}.card p{color:#EDE6D9;padding:0 16px}.card .q{color:#EDE6D9}
+.pic{border-radius:20px;width:100%;height:auto;display:block}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:24px}
+.three div{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}
+.three b{font:700 34px "Mansalva","Segoe Print","Comic Sans MS",cursive;color:var(--cu);display:block}
+.mid{max-width:760px}.big{font:italic 500 clamp(24px,3.6vw,34px)/1.35 "Mansalva","Segoe Print","Comic Sans MS",cursive;color:var(--cu2);margin:22px 0 0}
+.free{display:inline-block;margin-top:18px;font-weight:600;color:var(--cu2);border:1.5px dashed var(--cu);border-radius:99px;padding:6px 16px;font-size:15px}
+.ct{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:22px;max-width:640px}
+.ct div{background:#3A2F22;color:#EDE6D9;border-radius:18px;padding:22px;text-align:center}
+.ct b{display:block;font:700 26px "Mansalva","Segoe Print","Comic Sans MS",cursive}.ct span{display:block;font-size:20px;margin:4px 0 14px}
+.ct a{display:inline-block;background:#EDE6D9;color:#3A2F22;text-decoration:none;font-weight:600;padding:9px 20px;border-radius:99px;font-size:15px}
+footer{text-align:center;padding:40px 20px 48px;color:#6F5A44;font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:760px){.two,.vals,.three,.ct{grid-template-columns:1fr}.two{gap:24px}section{padding:44px 0}nav div{gap:12px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.quote blockquote{transition:none}}
+.air{width:min(300px,70vw);height:auto;display:block;margin:0 auto}
+.wm{font:400 clamp(40px,8vw,64px)/1 "Mansalva",cursive;color:var(--ink);margin-top:6px}
+.tag{font-size:18px;color:var(--cu);margin:8px 0 34px}
+h1,h2,h3{font-weight:400}.arti,.big,.card .q,.quote blockquote{font-style:normal}
+.btn{background:var(--ink)}.btn:hover{background:var(--olive)}
+.hero h1{font-size:clamp(30px,5vw,46px)}
+.nb{font:400 22px "Mansalva",cursive}
+.idg{display:grid;grid-template-columns:1.2fr 1.2fr .8fr;gap:18px;margin-top:24px}
+.bx{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;text-align:center}
+.bx h3{font-size:20px;color:var(--cu);margin-bottom:14px;border-bottom:1px solid var(--line);padding-bottom:8px}
+.bx .air{width:min(190px,80%)}.bx .wm{font-size:34px}
+.sek{font:400 40px/1.05 "Mansalva",cursive;color:var(--ink)}
+.ico{width:120px;height:120px;border-radius:50%;background:var(--soft);display:flex;align-items:center;justify-content:center;margin:0 auto}
+.ico img{width:76px}
+.ty{display:grid;grid-template-columns:1fr 1fr;gap:12px;text-align:left}
+.ty .aa{font-size:56px;line-height:1;color:var(--olive)}.ty small{display:block;font-size:13px;color:#6F5A44;line-height:1.4;margin-top:6px;word-break:break-all}
+.pal{display:grid;grid-template-columns:1fr 1fr;gap:12px}.pal i{display:block;height:54px;border-radius:12px;margin-bottom:4px}.pal span{font-size:13px;color:#6F5A44}
+.row{display:grid;grid-template-columns:1.2fr 1fr;gap:18px;margin-top:18px}
+.mk{width:100%;height:auto;border-radius:14px;display:block;margin-top:14px}
+footer{background:var(--ink);color:var(--soft);border:0}footer img{width:120px;height:auto;display:block;margin:0 auto 12px}
+@media (max-width:760px){.idg,.row{grid-template-columns:1fr}}
+.hero2{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center;padding:20px 0 72px}
+.hero2 h1{font-size:clamp(30px,4.6vw,48px);line-height:1.15;margin:10px 0 16px;color:var(--ink)}
+.hero2 p{color:#5A4A38;max-width:30em;margin:0}
+.kick{font-size:18px;color:var(--cu)}
+.hr{background:var(--ink);color:var(--soft);border-radius:28px;padding:56px 28px;text-align:center;display:flex;flex-direction:column;align-items:center;min-height:440px;justify-content:center}
+.hr img{width:min(320px,80%);height:auto}
+.wm2{font:400 clamp(40px,6vw,60px)/1 "Mansalva",cursive;margin-top:10px}
+.tg{font-size:17px;color:#CBBBA3;margin-top:12px}
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;margin-top:22px}
+.b2{grid-column:span 2}.b3{grid-column:span 3}.b4{grid-column:span 4}.b6{grid-column:span 6}
+.tall{grid-row:span 2}
+.fl{text-align:left;font-size:16px;line-height:1.6;color:#5A4A38;margin:14px 0 0}
+.pal6{grid-column:span 6;display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-radius:18px;overflow:hidden}
+.pal6 div{padding:34px 18px 18px;min-height:130px;font-size:15px}.pal6 b{display:block;font:400 24px "Mansalva",cursive}
+.bento .bx{display:flex;flex-direction:column;justify-content:flex-start}
+.bento .mk{margin-bottom:12px}
+@media (max-width:760px){.hero2{grid-template-columns:1fr;gap:28px}.hr{order:-1;min-height:340px;padding:40px 20px}.b2,.b3,.b4,.b6,.pal6{grid-column:span 6}.tall{grid-row:auto}.pal6{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="w">
+<nav><span class="nb">antar rasa</span><div><a href="#identitas">Identitas</a><a href="#filosofi">Filosofi</a><a href="#latar">Latar</a><a href="#menu">Menu</a><a href="#kontak">Pesan</a></div></nav>
+<header class="hero2">
+  <div class="hl"><div class="kick">tempat rasa bertemu</div>
+    <h1>Setiap cangkir punya pesan untuk seseorang.</h1>
+    <p>Kopi yang kami seduh bukan hanya untuk diminum. Ia diantar untuk menemani rindu, cerita, dan hari-harimu.</p>
+    <a class="btn" href="#menu">Lihat menu kami</a><br><span class="free">Free Delivery · Gas ken…</span></div>
+  <div class="hr"><img src="images/logo-primer-antar-rasa-huruf-a-m-5906b6.png" alt="Logo primer antar rasa: huruf a mengalir menuju r"><div class="wm2">antar rasa</div><div class="tg">pesan dulu, nanti kita antar</div></div>
+</header>
+</div>
+
+<section id="identitas"><div class="w">
+  <h2>Identitas brand</h2>
+  <div class="bento">
+    <div class="bx b4 tall"><h3>Logo primer</h3><img class="air" src="images/logo-primer-air-306557.png" alt="Logo primer air"><div class="wm">antar rasa</div>
+      <p class="fl">Huruf “a” yang mengalir menuju “r” menggambarkan proses mengantar, perjalanan, dan koneksi. Satu garis yang menyatu, sederhana, tapi penuh makna. Karena antar rasa bukan cuma tentang kopi, tapi tentang apa pun yang bisa kita antar ke orang lain.</p></div>
+    <div class="bx b2"><h3>Logo sekunder</h3><div class="sek">antar<br>rasa</div></div>
+    <div class="bx b2"><h3>Ikon</h3><div class="ico"><img src="images/logo-primer-air-306557.png" alt="Ikon air"></div></div>
+    <div class="pal6">
+      <div style="background:#3A2F22;color:#EDE6D9"><b>kopi</b>#3A2F22</div><div style="background:#8B6F52;color:#fff"><b>cokelat</b>#8B6F52</div>
+      <div style="background:#EDE6D9;color:#3A2F22"><b>cream</b>#EDE6D9</div><div style="background:#6B6F4E;color:#fff"><b>olive</b>#6B6F4E</div></div>
+    <div class="bx b3"><h3>Tipografi</h3><div class="ty">
+      <div><div class="aa" style="font-family:Mansalva,cursive">Aa</div><small>Mansalva<br>ABCDEFGHIJKLMN OPQRSTUVWXYZ 1234567890</small></div>
+      <div><div class="aa" style="font-family:'Anonymous Pro',monospace">Aa</div><small>Anonymous Pro<br>abcdefghijklmnopqrstuvwxyz 1234567890</small></div></div></div>
+    <div class="bx b3" style="background:rgb(255, 251, 240)"><h3>Pola</h3><img class="mk" style="margin-top:0" src="images/pola-doodle-maskot-cangkir-donat-4d6d7f.jpg" alt="Pola doodle maskot cangkir, donat, dan apel"></div>
+    <div class="bx b6"><h3>Mockup</h3>
+      <img class="mk" style="margin-top:0" src="images/mockup-logo-pada-cup-paper-bag-s-77aec4.jpg" alt="Mockup logo pada cup, paper bag, stiker, dan gerobak">
+      <img class="mk" src="images/mockup-logo-pada-totebag-instagr-b4bd11.jpg" alt="Mockup logo pada totebag, Instagram, catatan, dan papan gantung"></div>
+  </div>
+  <p class="big" style="text-align:center">“Dari pesanan kecil untuk perjalanan rasa yang lebih jauh.”</p>
+</div></section>
+<section class="band" id="filosofi"><div class="w mid">
+  <h2>Filosofi kami</h2>
+  <p>Kopi Antar Rasa lahir dari sebuah gagasan sederhana: bahwa kopi bukan hanya tentang rasa pahit, manis, atau aroma yang khas. Kopi adalah tentang perasaan yang hadir di setiap tegukan dan cerita yang tercipta di setiap pertemuan.</p>
+  <p>Kata “Antar” memiliki makna membawa atau mengantarkan. Sedangkan “Rasa” bukan hanya rasa dari kopi, tetapi juga rasa dalam kehidupan: rindu, bahagia, tenang, harapan, cinta, bahkan realita.</p>
+  <p>Maka, Kopi Antar Rasa hadir untuk mengantarkan setiap orang pada rasa yang berbeda melalui secangkir kopi.</p>
+  <p class="arti">“Kami tidak hanya mengantar kopi, kami mengantar rasa.”</p>
+</div></section>
+<section><div class="w">
+  <h2>Makna nama “Kopi Antar Rasa”</h2>
+  <div class="three">
+    <div><b>Kopi</b>Simbol dari kesederhanaan, kebersamaan, dan keseharian.</div>
+    <div><b>Antar</b>Melambangkan perjalanan. Sesuatu yang membawa kita dari satu suasana menuju suasana lainnya.</div>
+    <div><b>Rasa</b>Bukan hanya rasa di lidah, tetapi rasa yang ada di dalam hati dan kehidupan.</div>
+  </div>
+  <p class="big">“Dari biji menjadi kopi, dari kopi menjadi rasa, dari rasa menjadi cerita.”</p>
+</div></section>
+<section class="band" id="latar"><div class="w two">
+  <div><h2>Latar belakang</h2>
+    <p>Di tengah kesibukan kehidupan, secangkir kopi sering kali menjadi alasan sederhana untuk berhenti sejenak. Ada yang menikmati kopi untuk memulai hari, menemani pekerjaan, berbincang bersama teman, atau sekadar menikmati waktu sendiri.</p>
+    <p>Berangkat dari kebiasaan dan kedekatan masyarakat dengan kopi tersebut, Kopi Antar Rasa hadir sebagai brand kopi yang ingin memberikan pengalaman lebih dari sekadar menikmati minuman.</p>
+    <p>Setiap menu kami dirancang dengan nama dan karakter yang memiliki cerita. Karena kami percaya, setiap orang datang dengan cerita dan rasa yang berbeda.</p>
+    <p>Kopi Antar Rasa menjadi ruang kecil untuk menikmati kopi, menemukan suasana, dan membawa pulang sebuah rasa.</p></div>
+  <div><img class="pic" src="images/biji-kopi-bubuk-kopi-dan-daun-ko-d08b26.jpg" alt="Biji kopi, bubuk kopi, dan daun kopi"></div>
+</div></section>
+<section id="kata"><div class="w">
+  <div class="quote"><blockquote id="qt" aria-live="polite"></blockquote><button id="qb">Kata mutiara lainnya</button></div>
+</div></section>
+<section class="band" id="menu"><div class="w">
+  <h2>Menu: pilih pesan yang ingin kamu antar</h2>
+  <p style="margin:0">Tujuh kopi, tujuh perasaan.</p>
+  <div class="menu" id="menuGrid"></div>
+</div></section>
+<section id="kontak"><div class="w">
+  <h2>Pesan sekarang, gas ken…</h2>
+  <p style="margin:0">Free Delivery. Hubungi admin kami untuk memesan.</p>
+  <div class="ct">
+    <div><b>Admin I</b><span>0889-7020-8602</span><a href="https://wa.me/6288970208602">Chat WhatsApp</a></div>
+    <div><b>Admin II</b><span>0882-9641-1715</span><a href="https://wa.me/6288296411715">Chat WhatsApp</a></div>
+  </div>
+</div></section>
+<footer><img src="images/logo-primer-antar-rasa-huruf-a-m-5906b6.png" alt="antar rasa"><div>Kopi Antar Rasa · tempat rasa bertemu</div><div>pesan dulu, nanti kita antar</div></footer>
+
+<script>
+(function(){
+var IMG=["images/kopi-antar-awan-973cfd.jpg","images/kopi-antar-rindu-c52ea3.jpg","images/kopi-antar-peluk-d4bbbc.jpg","images/kopi-realita-231ab9.jpg","images/kopi-antar-cerita-1809cd.jpg","images/kopi-antar-hati-ae726a.jpg","images/kopi-antar-senja-9a8cca.jpg"];
+var D=[
+["Kopi Antar Awan","Creamy Espresso",["#3A2214","#E9D3B4","#FFF6E8"],"Espresso pekat berselimut krim lembut. Terasa ringan seperti melayang.","Tenang itu ada di atas awan."],
+["Kopi Antar Rindu","Cappuccino",["#5A3420","#C99B6D","#FBF1E0"],"Espresso, susu, dan busa tebal yang hangat di setiap tegukan.","Rindu tak perlu diucap, cukup diseduh."],
+["Kopi Antar Peluk","Cafe Latte",["#7A4A2C","#E3C39C","#F7EBDA"],"Susu yang lembut dan kopi yang ramah. Pelukan dalam gelas.","Hangatnya sampai ke dalam hati."],
+["Kopi Realita","Americano",["#241208","#3A2214","#4E2E1B"],"Kopi hitam yang bersih dan tegas. Pahitnya jujur.","Hidup tak selalu manis, tapi selalu layak dinikmati."],
+["Kopi Antar Cerita","Macchiato",["#EBD9BF","#4A2A17","#F7EBDA"],"Lapisan susu dan espresso yang saling bertemu, seperti dua orang yang mulai bercerita.","Setiap cangkir adalah awal obrolan."],
+["Kopi Antar Hati","Butterscotch Latte",["#8A4A24","#D79A3F","#F6DDA8"],"Latte dengan karamel butterscotch yang manis dan gurih.","Manis itu sederhana, cukup tulus."],
+["Kopi Antar Senja","Palm Sugar (kopi susu gula aren)",["#B8662B","#6B3A1B","#EAC9A0"],"Kopi susu gula aren dengan manis legit khas Nusantara.","Senja paling indah dinikmati berdua."]
+];
+var g=document.getElementById("menuGrid"),NS="http://www.w3.org/2000/svg";
+D.forEach(function(d,i){
+  var s='<img src="'+IMG[i]+'" alt="Foto '+d[0]+'">';
+  var e=document.createElement("div");e.className="card";
+  e.innerHTML=s+'<h3></h3><div class="t"></div><p></p><p class="q"></p>';
+  e.querySelector("h3").textContent=d[0];e.querySelector(".t").textContent=d[1];
+  var p=e.querySelectorAll("p");p[0].textContent=d[3];p[1].textContent="“"+d[4]+"”";
+  g.appendChild(e);
+});
+var Q=["Kopi bisa pahit, tapi diantar dengan hati ia selalu terasa manis.","Tidak semua rasa bisa diucapkan, sebagian cukup diseduh.","Mulailah dari secangkir keberanian, sisanya akan menyusul.","Bisnis besar dimulai dari mimpi yang diseduh pelan-pelan.","Ada rindu yang hanya tuntas dengan satu tegukan hangat.","Jangan menunggu sempurna. Seduh sekarang, perbaiki sambil jalan.","Cerita terbaik sering lahir di meja kecil dan cangkir yang sama.","Hari yang berat pun terasa ringan jika ada yang menemani minum kopi."];
+var qt=document.getElementById("qt"),n=0;
+function show(){qt.style.opacity=0;setTimeout(function(){qt.textContent="“"+Q[n]+"”";qt.style.opacity=1;n=(n+1)%Q.length;},200);}
+document.getElementById("qb").onclick=show;n=Math.floor(Math.random()*Q.length);show();
+})();
+</script>
+</body>
+</html>
